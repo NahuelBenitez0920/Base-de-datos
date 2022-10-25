@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center mt-5 text-light pb-5">
+            <h1>Bases de Datos y MySQL</h1>
+        </div>
+
+        <div class="container text-light text-center pb-4">
+            <div class="pb-5">
+                <h3>Introducción</h3>
+            </div>
+
+            <div class="container text-start">
+                <h5>¿Que es una Base de Datos?</h5>
+                <p>Una base de datos es una recopilación organizada de información o datos estructurados, que
+                    normalmente se almacena de forma electrónica en un sistema informático.
+                    Normalmente, una base de datos está controlada por un sistema de gestión de bases de datos <span
+                        class="fst-italic">(DBMS)</span>.
+                    En conjunto, los datos y el DBMS, junto con las aplicaciones asociadas a ellos, reciben el nombre de
+                    sistema de bases de datos, abreviado normalmente a simplemente base de datos.
+                    Los datos de los tipos más comunes de bases de datos en funcionamiento actualmente se suelen
+                    utilizar como estructuras de filas y columnas en una serie de tablas para aumentar la eficacia del
+                    procesamiento y la consulta de datos.
+                    Así, se puede acceder, gestionar, modificar, actualizar, controlar y organizar fácilmente los datos.
+                    La mayoría de las bases de datos utilizan un lenguaje de consulta estructurada (SQL) para escribir y
+                    consultar datos.
+                    <br>
+                    <a href="https://www.oracle.com/mx/database/what-is-database/">- Oracle Mexico</a>
+                </p>
+                <h5>Historia</h5>
+                <p>Las bases de datos existen desde la antiguedad, donde se recogía información sobre las cosechas,
+                    sobre los censos en papiros y se custodiaban en bibliotecas.
+                    En la informática su origen se remonta a 1884 con el tabluador electromagnetico de tarjetas
+                    perforadas que facilitaba el resumen de la informacion y posteriormente la contabilidad.
+                </p>
+            </div>
+
+            <div class="pb-5">
+                <h3>Gestores de Bases de Datos (DBMS)</h3>
+            </div>
+            <div class="container text-start">
+                <h5>¿Que es un Sistema DBMS?</h5>
+                <p>Un Sistema Gestor de Base de Datos, o DataBase Management System <span
+                        class="fst-italic">(DBMS)</span>, es un sistema que permite la creación, gestión y
+                    administración de bases de datos, así como la elección y manejo de las estructuras necesarias para
+                    el almacenamiento y búsqueda de información del modo más eficiente posible.
+                    En conjunto, los datos y el DBMS, junto con las aplicaciones asociadas a ellos, reciben el nombre de
+                    sistema de bases de datos, abreviado normalmente a simplemente base de datos.
+                    En la actualidad, existen multitud de DBMS y según la forma en que administran los datos pueden ser
+                    clasificados en dos tipos:
+                </p>
+                <ul>
+                    <li> Relacionales (SQL)</li>
+                    <li>No relacionales (NoSQL)</li>
+                </ul>
+
+                <h5 class=" pt-3 pb-3">Bases de Datos Relacionales (SQL)</h5>
+                <p>
+                    Las bases de datos relacionales se caracterizan por ser una colección ordenada de registros que se
+                    organizan en un conjunto de tablas.
+                    Estas tablas se relacionan entre sí, dando lugar a una base de datos desde donde se puede acceder a
+                    los datos o volver a montarlos de muchas maneras diferentes sin tener que reorganizar las tablas de
+                    la base.
+                </p>
+                <div class="row">
+                    <div class="col-6 pt-3 pb-4">
+                        <img class="w-75 rounded" src="/images/tabla.png" alt="Database Table">
+                    </div>
+                    <div class="col-6  pt-3 pb-4">
+                        <img class="w-75 rounded" src="/images/Modelo-relacional-de-base-de-datos.jpg" alt="Database Table">
+                    </div>
+                </div>
+                <p>
+                    Desde que se comenzó a usar el modelo de bases de datos relacionales, en 1970, ha ido sufriendo una
+                    serie de transformaciones hasta convertirse, hoy en día, en el modelo más utilizado para administrar
+                    bases de datos.
+                    Este modelo se basa fundamentalmente en establecer relaciones o vínculos entre los datos, imaginando
+                    una tabla aparte por cada relación existente con sus propios registros y atributos.
+                    Los principales Sistemas gestores de bases de datos relacionales actualmente son:
+                </p>
+                <div>
+                    <div class="row">
+                        <div id class="col-lg-6 col-md-auto col-sm-12 pb-5">
+                            <div id="oracledb" class="card border border-dark" style="width: 18rem;">
+                                <img src="/images/oracledb.png" class="card-img-top" alt="...">
+                                <div class="card-body bg-dark text-light text-center">
+                                    <h5>Oracle Database</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div  class="col-lg-6 col-md-auto col-sm-12 pb-5">
+                            <div id="access" class="card border border-dark" style="width: 18rem;">
+                                <img id="access" src="/images/microsoft-access.png"
+                                    class="card-img-top w-25 p-2 align-self-center" alt="...">
+                                <div class="card-body bg-dark text-light text-center">
+                                    <h5>Microsoft Access</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div  class="col-lg-6 col-md-auto col-sm-12 pb-5">
+                            <div id="mcsqlsv" class="card border border-dark" style="width: 18rem;">
+                                <img src="/images/microsoft-sql-server.png"
+                                    class=" sqlserver card-img-top  align-self-center" alt="...">
+                                <div class="card-body bg-dark text-light text-center">
+                                    <h5>MicrosoftSQL Server</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div  class="col-lg-6 col-md-auto col-sm-12 pb-5">
+                            <div id="sqlite" class="card border border-dark" style="width: 18rem;">
+                                <img src="/images/sqlite.png" class="card-img-top w-50 p-2 align-self-center" alt="...">
+                                <div class="card-body bg-dark text-light text-center">
+                                    <h5>SQLite</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div  class="col-lg-6 col-md-auto col-sm-12 pb-5">
+                            <div id="mariadb" class="card border border-dark" style="width: 18rem;">
+                                <img src="/images/mariadb.png" class="card-img-top w-50 align-self-center p-2" alt="...">
+                                <div class="card-body bg-dark text-light text-center">
+                                    <h5>MariaDB</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div  class="col-lg-6 col-md-auto col-sm-12 pb-5">
+                            <div id="mysql" class="card border border-dark" style="width: 18rem;">
+                                <img src="/images/mySQL.png" class="card-img-top p-2 w-50 align-self-center" alt="...">
+                                <div class="card-body bg-dark text-light text-center">
+                                    <h5>MySQL</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     <script src="/js/script.js"></script>
+     <script src="/js/bootstrap.bundle.min.js"></script>
+     <script src="/js/bootstrap.bundle.min.js.map"></script>
+</body>
+</html>
