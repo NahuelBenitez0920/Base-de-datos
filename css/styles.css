@@ -12,3 +12,13 @@ a {
 .sqlserver {
     width: 35%;
 }
+
+.list {
+    list-style: none;
+}
+.sqlimg {
+    width: 87%;
+}
+.transparent {
+    color: rgba(255, 228, 196, 0);
+}

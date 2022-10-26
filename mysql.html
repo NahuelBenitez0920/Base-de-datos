@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<style>
+    body {
+        background-image: linear-gradient(90deg, rgba(0,0,0,0.750), rgba(0,0,0,0.750)), url("images/fondo.jpg");
+    }
+    
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="text-center mt-5 text-light pb-5">
+            <h1>MySQL</h1>
+        </div>
+
+        <div class="container text-light text-center pb-4">
+         
+
+            <div class="container text-start pb-5">
+               <p>
+                MySQL es el sistema de gestión de bases de datos relacional más extendido en la actualidad al estar basada en código abierto. 
+                Es creado en el año 1995 por Michael Widenius junto con David Axmark y Allan Larsson, quienes también crearon la empresa MySQL AB.
+                <br>
+                <br>
+                 MySQL nace con el objetivo de presentar un sistema de gestión de base de datos a los usuarios domésticos y a los profesionales,
+                la popularidad que obtuvo hizo que fuese poco a poco mejorando gracias, en parte, a las propias sugerencias de quienes lo usaban.
+                En el año 2010 fue adquirido por Oracle Corporation, pasando a tener ahora dos versiones, MySQL que continúa siendo open source y 
+                MySQL Enterprise que es una versión comercial.
+                </p>
+            </div>
+            <div class="container w-75 pb-5">
+                <img class="sqlimg" src="images/MySQL_Workbench_Mainscreen_Windows.gif">
+            </div>
+
+            <div class="container text-start pt-4">
+                <h5 class="pb-3">Características</h5>
+                <p> 
+                    Como mencionamos anteriormente, MySQL trabaja con bases de datos relacionales, es decir, utiliza múltiples tablas
+                    que se relacionan entre sí para almacenar la información y organizarla adecuadamente.
+
+                    Una de sus principales ventajas es que es de código abierto, lo que hace que sea fácilmente accesible, también cuenta con
+                    una gran comunidad de usuarios que le dan soporte al sistema. Estas son algunas de sus principales características:
+
+                </p>
+                <div class="w-75">
+                <ul class="list">
+                    <li>
+                        <p><span class="fw-bold"> Arquitectura Cliente-Servidor:</span> Su funcionamiento es basado en el modelo de cliente y servidor.
+                        Cada usuario puede hacer consultas a través del sistema de registro para obtener datos, modificarlos, guardar los cambios o crear nuevas tablas de registros.</p>
+                    </li>
+                    <li>
+                        <p><span class="fw-bold">Procedimientos Almacenados:</span> MySQL no procesa las tablas directamente, sino que lo hace a través de procedimientos almacenados, esto hace posible incrementar la eficacia de nuestra implementación.</p>
+                    </li>
+                    <li>
+                        <p><span class="fw-bold">Eventos Descencadenantes:</span> MySQL nos permite automatizar algunos procesos dentro de nuestra base de datos mediante los eventos descencadenantes,
+                                                 al momento que se produce un evento otro es ejecutado para modificar o actualizar registros.</p>
+                    </li>
+                    <li>
+                        <p><span class="fw-bold">Transacciones:</span> Una transacción es una cadena de instrucciones, las cuales deben ejecutarse correctamente en su totalidad o, por el contrario, ninguna de ellas lo hará. 
+                                                 En caso de que ocurra algún error, el sistema optara por anular las modificaciones en las tablas de registros y las restablecerá a su valor previo a la ejecución.</p>
+                    </li>
+                    <li>
+                        <p><span class="fw-bold">Arquitectura multihilo:</span> La arquitectura multihilo de mySQL permite que varios usuarios accedan a los datos almacenados de manera simultánea.</p>
+                    </li>
+                    <li>
+                        <p><span class="fw-bold">Motores de Almacenamiento:</span> MySQL es compatible con múltiples motores de almacenamiento, siendo los más utilizados InnoDB y MyISAM.</p>
+                    </li>
+                    <li>
+                        <p><span class="fw-bold">Interfaz Gráfica:</span> Debido a las características de una base de datos, no siempre es sencillo operar con las mismas, por lo que existen varias interfaces graficas
+                                                 que facilitan el trabajo. En el caso de MySQL, se dispone de varias interfaces como por ejemplo MySQL Workbench, DBeaver o Navicat, entre otras.</p>
+                    </li>
+                    <li>
+                        <p><span class="fw-bold"> Multiplataforma:</span> Tiene compatibilidad con diversos sistemas operativos, algunos de ellos son Microsoft Windows, Linux, Mac OS, Solaris, FreeBSD, etc.</p>
+                    </li>
+                    <a href="https://openwebinars.net/blog/que-es-mysql/">Open Webinars - ¿Que es MySQL?</a> <br> <a href="https://tecnomagazine.net/mysql/">TechnoMagazine - MySQL</a>
+                </ul>
+
+                </div>
+                    <h5>Principales sentencias de MySQL</h5>
+                    <p>MySQL comparte las sentencias del lenguaje SQL, lo que en la práctica se traduce en una plena compatibilidad. Estas son algunas de sus sentencias básicas:</p>
+                    <ul class="list">
+                        <li><p><span class="fw-bold">SELECT</span> Es usada para consultar datos.</p></li>
+                        <li><p><span class="fw-bold">DISTINCT</span> En caso de haber un dato duplicado, lo selecciona una vez al momento de hacer la consulta.</p></li>
+                        <li><p><span class="fw-bold">WHERE</span> Se usa para aplicar un filtrado en la tabla, selecciona aquellas filas que posean los datos que cumplen una condicion preestablecida.</p></li>
+                        <li><p><span class="fw-bold">AND y OR</span> Operadores logicos.</p></li>
+                        <li><p><span class="fw-bold"> ORDER BY</span> Se utiliza para ordenar los resultados de una consulta segun el valor de la columna especificada, el orden puede ser ascendente o descendente.</p></li>
+                        <li><p><span class="fw-bold">INSERT</span> Es usada para insertar un datos en una tabla.</p></li>
+                        <li><p><span class="fw-bold">DELETE</span> Se utiliza para eliminar datos en una tabla.</p></li>
+                        <li><a href="https://openwebinars.net/blog/que-es-mysql/">Open Webinars - ¿Que es mySQL?</a><span class="transparent">"  "</span>  <a href="https://www.ibm.com/docs/es/qmf/11.2?topic=ri-basic-sql-statements-functions-used-in-qmf-queries">IBM Documentation - SQL Sentences</a></li>
+                    </ul>
+                    
+                    <div class="pt-5">
+                        <h5 class="pb-4">Ejemplos</h5>
+
+                        <h6>Uso de SELECT</h6>
+                        <div class="pb-5">
+                            <img class="rounded" src="images/example1.png" alt="">
+                        </div>
+                        <h6>Uso de DISTINCT</h6>
+                        <div class="pb-2">
+                            <img class="rounded" src="images/example2.png" alt="">
+                        </div>
+                        <p>Al momento de hacer la consulta puede ocurrir que haya algun dato repetido.</p>
+                        <div class="pb-5">
+                            <img class="rounded" src="images/example2.5.png" alt="">
+                            <p class="pt-2">Al incluir la sentencia DISTINCT al SELECT, estamos solicitando que no se tomen en cuenta valores repetidos.</p>
+                        </div>
+                        <div class="pt-2 pb-5">
+                            <h6>Uso de WHERE</h6>
+                            <img class="rounded" src="images/example3.png" alt="">
+                            <p class="pt-2">En este caso, la sentencia WHERE selecciona todas las filas de la tabla cuyo campo nombre sea "EVA"</p>
+                        </div>
+                        <div class="pb-5">
+                            <h6>Uso de ORDER BY</h6>
+                            <img class="rounded" src="images/example4.png" alt="">
+                        </div>
+                        <div class="pb-5">
+                            <h6>Uso de INSERT</h6>
+                            <img class="rounded" src="images/example5.png" alt="">
+                        </div>
+                        <div class="pb-5">
+                            <h6>Uso de DELETE</h6>
+                            <img class="rounded" src="images/example6.png" alt="">
+                        </div>
+                        
+                        
+
+                        
+                    </div>
+
+            </div>
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js.map"></script>
+  
+</body>
+</html>
