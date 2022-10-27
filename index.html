@@ -58,8 +58,7 @@
             </div>
             <div class="container text-start">
                 <h5>¿Que es un Sistema DBMS?</h5>
-                <p>Un Sistema Gestor de Base de Datos, o DataBase Management System <span
-                        class="fst-italic">(DBMS)</span>, es un sistema que permite la creación, gestión y
+                <p>Un Sistema Gestor de Base de Datos, o <span class="fst-italic">Database Management System (DBMS)</span>, es un sistema que permite la creación, gestión y
                     administración de bases de datos, así como la elección y manejo de las estructuras necesarias para
                     el almacenamiento y búsqueda de información del modo más eficiente posible.
                     En conjunto, los datos y el DBMS, junto con las aplicaciones asociadas a ellos, reciben el nombre de
@@ -74,31 +73,68 @@
 
                 <h5 class=" pt-3 pb-3">Bases de Datos Relacionales (SQL)</h5>
                 <p>
-                    Las bases de datos relacionales se caracterizan por ser una colección ordenada de registros que se
-                    organizan en un conjunto de tablas.
-                    Estas tablas se relacionan entre sí, dando lugar a una base de datos desde donde se puede acceder a
-                    los datos o volver a montarlos de muchas maneras diferentes sin tener que reorganizar las tablas de
-                    la base.
+                    Una base de datos relacional es un tipo de base de datos que almacena y proporciona acceso a puntos de datos relacionados entre sí. 
+                    Este tipo de bases de datos se basan en el modelo relacional desarrollado por Edgar Frank Codd desde IBM en la década de 1970. 
+                    El modelo de base de datos relacional permite que cualquier tabla se relacione con otra mediante un atributo común. 
+                    En lugar de usar estructuras jerárquicas para organizar los datos, Codd propuso el cambio a un nuevo modelo en el que los datos se almacenan, se consultan y se relacionan en tablas sin reorganizar las tablas que los contienen.
+                </p>
+                
+                <p>
+                    Los atributos (columnas) especifican un tipo de datos, y cada registro (o fila) contiene el valor de ese tipo de datos específico. Todas las tablas de una base de datos relacional tienen un atributo conocido como clave primaria, que es un identificador único de una fila, y cada fila se puede usar para crear una relación entre tablas diferentes mediante una clave externa (una referencia a una clave primaria de otra tabla existente).
                 </p>
                 <div class="row">
-                    <div class="col-6 pt-3 pb-4">
+                    <div class="col-lg-6 col-md-auto col-sm-12 pt-3 pb-4">
                         <img class="w-75 rounded" src="images/tabla.png" alt="Database Table">
                     </div>
-                    <div class="col-6  pt-3 pb-4">
+                    <div class="col-lg-6 col-md-auto col-sm-12 pt-3 pb-4">
                         <img class="w-75 rounded" src="images/Modelo-relacional-de-base-de-datos.jpg" alt="Database Table">
                     </div>
                 </div>
-                <p>
-                    Desde que se comenzó a usar el modelo de bases de datos relacionales, en 1970, ha ido sufriendo una
-                    serie de transformaciones hasta convertirse, hoy en día, en el modelo más utilizado para administrar
-                    bases de datos.
-                    Este modelo se basa fundamentalmente en establecer relaciones o vínculos entre los datos, imaginando
-                    una tabla aparte por cada relación existente con sus propios registros y atributos.
-                    Los principales Sistemas gestores de bases de datos relacionales actualmente son:
-                </p>
+                    <div class="container">
+                        <h5>Ventajas de las Bases de Datos relacionales</h5>
+                        <p>
+                            El principal beneficio del modelo de base de datos relacional es que proporciona una manera intuitiva de representar datos y permite un acceso fácil a datos relacionados.
+                            También existen otras ventajas de usar bases de datos relacionales para administrar y almacenar tus datos, alguna de ellas son:
+                        </p>
+                        <div class="row pt-2">
+                            <div  class="col-lg-4 col-md-auto col-sm-12 pb-5">
+                                <div class="card overflow-auto mb-3" style="max-width: 20rem; max-height: 13rem;">
+                                    <div class="card-header bg-success"><span class="fw-bold">Facilidad de Uso</span></div>
+                                    <div class="card-body pb-4 bg-dark">
+                                      <p class="card-text">Es fácil ejecutar consultas complejas con SQL, lo que permite que incluso los usuarios no técnicos aprendan a interactuar con la base de datos.</p>
+                                    </div>                                  
+                                </div>
+                            </div>
+                            <div  class="col-lg-4 col-md-auto col-sm-12 pb-5">
+                                <div class="card overflow-auto mb-3" style="max-width: 20rem; max-height: 11.2rem;">
+                                    <div class="card-header bg-success"><span class="fw-bold">Flexibilidad</span></div>
+                                    <div class="card-body bg-dark">
+                                      <p class="card-text">Es fácil agregar, actualizar o borrar tablas, relaciones y hacer otros cambios a los datos cuando lo necesites sin cambiar la estructura general de la base de datos ni afectar las aplicaciones existentes</p>
+                                      <a class="quotesize" href="https://cloud.google.com/learn/what-is-a-relational-database?hl=es-419">Google Cloud - What is a relational database</a>
+                                    </div>                                  
+                                </div>
+                            </div>
+                            <div  class="col-lg-4 col-md-auto col-sm-12 pb-5">
+                                <div class="card overflow-auto mb-3" style="max-width: 20rem; max-height: 11.2rem;">
+                                    <div class="card-header bg-success"><span class="fw-bold">Bloqueo y Simultaneidad</span></div>
+                                    <div class="card-body bg-dark">
+                                      <p class="card-text">En una base de datos pueden surgir conflictos cuando varios usuarios o aplicaciones intentan cambiar los mismos datos al mismo tiempo. Las técnicas de bloqueo y concurrencia reducen la posibilidad de conflictos y mantienen la integridad de los datos.
+                                                            El bloqueo evita que otros usuarios y aplicaciones accedan a los datos mientras se están actualizando.</p>
+                                        <a class="quotesize" href="https://www.oracle.com/ar/database/what-is-a-relational-database/">Oracle Database</a>                    
+                                    </div>                                  
+                                </div>
+                            </div>
+                        </div>
+                            
+                    </div>
+                    <p class="pb-3">
+                        Desde que se comenzó a utilizar el modelo de base de datos relacionales en 1970, ha ido sufriendo una serie de transformaciones hasta convertirse, hoy en día, en el modelo más utilizado para administrar bases de datos.
+                        Algunos de los principales sistemas gestores de bases de datos son:
+                    </p>
+
                 <div>
                     <div class="row">
-                        <div id class="col-lg-6 col-md-auto col-sm-12 pb-5">
+                        <div id class="col-lg-4 col-md-auto col-sm-12 pb-5">
                             <div id="oracledb" class="card border border-dark" style="width: 18rem;">
                                 <img src="images/oracledb.png" class="card-img-top" alt="...">
                                 <div class="card-body bg-dark text-light text-center">
@@ -106,7 +142,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div  class="col-lg-6 col-md-auto col-sm-12 pb-5">
+                        <div  class="col-lg-4 col-md-auto col-sm-12 pb-5">
                             <div id="access" class="card border border-dark" style="width: 18rem;">
                                 <img id="access" src="images/microsoft-access.png"
                                     class="card-img-top w-25 p-2 align-self-center" alt="...">
@@ -115,7 +151,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div  class="col-lg-6 col-md-auto col-sm-12 pb-5">
+                        <div  class="col-lg-4 col-md-auto col-sm-12 pb-5">
                             <div id="mcsqlsv" class="card border border-dark" style="width: 18rem;">
                                 <img src="images/microsoft-sql-server.png"
                                     class=" sqlserver card-img-top  align-self-center" alt="...">
@@ -124,7 +160,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div  class="col-lg-6 col-md-auto col-sm-12 pb-5">
+                        <div  class="col-lg-4 col-md-auto col-sm-12 pb-5">
                             <div id="sqlite" class="card border border-dark" style="width: 18rem;">
                                 <img src="images/sqlite.png" class="card-img-top w-50 p-2 align-self-center" alt="...">
                                 <div class="card-body bg-dark text-light text-center">
@@ -132,7 +168,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div  class="col-lg-6 col-md-auto col-sm-12 pb-5">
+                        <div  class="col-lg-4 col-md-auto col-sm-12 pb-5">
                             <div id="mariadb" class="card border border-dark" style="width: 18rem;">
                                 <img src="images/mariadb.png" class="card-img-top w-50 align-self-center p-2" alt="...">
                                 <div class="card-body bg-dark text-light text-center">
@@ -140,7 +176,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div  class="col-lg-6 col-md-auto col-sm-12 pb-5">
+                        <div  class="col-lg-4 col-md-auto col-sm-12 pb-5">
                             <div id="mysql" class="card border border-dark" style="width: 18rem;">
                                 <img src="images/mySQL.png" class="card-img-top p-2 w-50 align-self-center" alt="...">
                                 <div class="card-body bg-dark text-light text-center">
@@ -150,7 +186,61 @@
                         </div>
                     </div>
                 </div>
+                    <h5 class="pb-3">Bases de Datos no Relacionales (noSQL)</h5>
+                    <p>
+                        Las bases de datos no relacionales están diseñadas para modelos de datos específicos y que no necesitan ser relacionados con otros modelos. Cada tabla funciona de forma independiente y son mucho más sencillas que los modelos relacionales.
+                        Algunas de las características de las bases de datos no relacional (NoSQL) serian que:
+                    </p>
+                    <div class="w-75 pb-3">
+                        <ul>
+                            <li>No requiere de estructuras de datos fijas como tablas</li>
+                            <li>No garantiza completamente las características ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad)</li>
+                            <li>Escala muy bien horizontalmente</li>
+                            <li>Se utilizan en entornos distribuidos que han de estar siempre disponibles y operativos y que gestionan un importante volumen de datos.</li>
+                        </ul>
+                    </div>
+                    <h5>Tipos</h5>
+                    <p>Existen diferentes tipos de bases de datos no relacionales, en función del método que emplean para almacenar la información. Veamos algunos de ellos.</p>
+                    <div class="w-75 pb-4">
+                        <ul>
+                            <li><p><span class="fw-bold">Clave-valor:</span> Se trata de bases de datos no relacionales que almacenan la información en base a pares de clave valor. Es decir, cada clave sirve como un identificador único, y a cada una de ellas se le aplica un valor. Son especialmente usadas a la hora de almacenar datos de juegos, aplicaciones o aparatos que funcionan mediante el internet de las cosas (IoT).</p></li>
+                            <li><p><span class="fw-bold">Documentos:</span> En una base de datos relacional basada en documentos la información se representa como objetos o documentos JSON. Su principal ventaja es que los documentos son de naturaleza flexible, semiestructurada y jerárquica, lo que facilita a los desarrolladores las tareas de almacenamiento, gestión y consulta de datos. Es un modelo usado habitualmente en sistemas de administración de contenidos o para gestionar perfiles de usuarios.</p></li>
+                            <li><p><span class="fw-bold">Graficos:</span> Las bases de datos no relacionales basadas en gráficos están pensadas para crear relaciones y navegar por ellas. Las entidades de datos se almacenan mediante nodos y los bordes son los que crear las relaciones entre entidades. Con frecuencia las bases de datos gráficas se emplean en redes sociales, sistemas de detección o prevención de fraudes o sistemas de recomendaciones.</p></li>
+                            <li><p><span class="fw-bold">En Memoria:</span> Son bases de datos no relacionales diseñadas para ofrecer respuestas en milisegundos y soportar grandes picos de tráfico. Un ejemplo de bases de datos en memoria son las empleadas en tablas de clasificaciones de juegos o en herramientas para hacer análisis en tiempo real.</p></li>
+                        </ul>
+                    </div>
+                    
+                    <p>Para la administración de este tipo de bases de datos, actualmente los principales sistemas gestores de bases de datos (DBMS NoSQL) son:</p>
+                    <div class="row">
+                        <div id class="col-lg-4 col-md-auto col-sm-12 pb-5">
+                            <div id="oracledb" class="card border border-dark" style="width: 18rem;">
+                                <img src="images/mongodb.png" class="card-img-top w-75 align-self-center" alt="...">
+                                <div class="card-body bg-dark text-light text-center">
+                                    <h5>MongoDB</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div  class="col-lg-4 col-md-auto col-sm-12 pb-5">
+                            <div id="access" class="card border border-dark" style="width: 18rem;">
+                                <img id="access" src="images/cassandradb.png"
+                                    class="card-img-top w-50 p-2 align-self-center" alt="...">
+                                <div class="card-body bg-dark text-light text-center">
+                                    <h5>Apache Cassandra</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div  class="col-lg-4 col-md-auto col-sm-12 pb-5">
+                            <div id="mcsqlsv" class="card border border-dark" style="width: 18rem;">
+                                <img src="images/redis.webp"
+                                    class=" sqlserver card-img-top  align-self-center p-3" alt="...">
+                                <div class="card-body bg-dark text-light text-center">
+                                    <h5>Redis</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
+        </div>
   <script src="js/script.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/bootstrap.bundle.min.js.map"></script>
